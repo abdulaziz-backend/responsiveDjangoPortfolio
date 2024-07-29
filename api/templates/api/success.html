@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cube-container">
+        <div class="cube">
+            <!-- Front Face -->
+            <div class="face front">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm6.592 8.592l-7.702 7.702a.751.751 0 01-1.062 0L5.408 12.16a.751.751 0 011.062-1.062L11.625 14.25l6.188-6.188a.751.751 0 011.062 1.062z"/></svg>
+                <h1>Success!</h1>
+                <p>Your action was completed successfully.</p>
+                <a href="/" class="button">Go to Home</a>
+            </div>
+
+            <!-- Back Face -->
+            <div class="face back">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm6.592 8.592l-7.702 7.702a.751.751 0 01-1.062 0L5.408 12.16a.751.751 0 011.062-1.062L11.625 14.25l6.188-6.188a.751.751 0 011.062 1.062z"/></svg>
+                <h1>Success!</h1>
+                <p>Your action was completed successfully.</p>
+                <a href="/" class="button">Go to Home</a>
+            </div>
+
+            <!-- Left Face -->
+            <div class="face left">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm6.592 8.592l-7.702 7.702a.751.751 0 01-1.062 0L5.408 12.16a.751.751 0 011.062-1.062L11.625 14.25l6.188-6.188a.751.751 0 011.062 1.062z"/></svg>
+                <h1>Success!</h1>
+                <p>Your action was completed successfully.</p>
+                <a href="/" class="button">Go to Home</a>
+            </div>
+
+            <!-- Right Face -->
+            <div class="face right">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm6.592 8.592l-7.702 7.702a.751.751 0 01-1.062 0L5.408 12.16a.751.751 0 011.062-1.062L11.625 14.25l6.188-6.188a.751.751 0 011.062 1.062z"/></svg>
+                <h1>Success!</h1>
+                <p>Your action was completed successfully.</p>
+                <a href="/" class="button">Go to Home</a>
+            </div>
+
+            <!-- Top Face -->
+            <div class="face top">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm6.592 8.592l-7.702 7.702a.751.751 0 01-1.062 0L5.408 12.16a.751.751 0 011.062-1.062L11.625 14.25l6.188-6.188a.751.751 0 011.062 1.062z"/></svg>
+                <h1>Success!</h1>
+                <p>Your action was completed successfully.</p>
+                <a href="/" class="button">Go to Home</a>
+            </div>
+
+            <!-- Bottom Face -->
+            <div class="face bottom">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm6.592 8.592l-7.702 7.702a.751.751 0 01-1.062 0L5.408 12.16a.751.751 0 011.062-1.062L11.625 14.25l6.188-6.188a.751.751 0 011.062 1.062z"/></svg>
+                <h1>Success!</h1>
+                <p>Your action was completed successfully.</p>
+                <a href="/" class="button">Go to Home</a>
+            </div>
+        </div>
+    </div>
+    <style>
+        /* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #001F3F; /* Dark blue background */
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    perspective: 1000px; /* Perspective for 3D effect */
+}
+
+.cube-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: rotateCube 10s infinite linear;
+}
+
+.cube {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.face {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.4;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+}
+
+.front  { transform: rotateY(0deg) translateZ(150px); }
+.back   { transform: rotateY(180deg) translateZ(150px); }
+.left   { transform: rotateY(-90deg) translateZ(150px); }
+.right  { transform: rotateY(90deg) translateZ(150px); }
+.top    { transform: rotateX(90deg) translateZ(150px); }
+.bottom { transform: rotateX(-90deg) translateZ(150px); }
+
+.face .check-icon {
+    width: 60px;
+    height: 60px;
+    fill: #00C851; /* Bright green color for success checkmark */
+    margin-bottom: 1rem;
+    animation: bounce 1s ease infinite;
+}
+
+.face h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #00C851;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.face p {
+    font-size: 1.2rem;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.face .button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    color: #ffffff;
+    background-color: #00C851;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.face .button:hover {
+    background-color: #007E33;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+/* 3D Rotation animation for the cube */
+@keyframes rotateCube {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+/* Bounce animation for check icon */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Pulse animation for button */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+}
+
+    </style>
+</body>
+</html>
