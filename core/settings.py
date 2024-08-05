@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-bn1!cd-76zwjhg$(is#s@0)28zw%54#ke5^@(ql=zmnsxd(6te
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['abdulazizpy.netlify.app']
 
 
 
@@ -109,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 
